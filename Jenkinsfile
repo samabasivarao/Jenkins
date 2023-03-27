@@ -18,7 +18,7 @@ pipeline {
                                  ANYPOINT_CREDENTIALS = credentials('platform.credentials')
                                }
                    steps {
-                            bat 'mvn deploy -DmuleDeploy -DmuleVersion=4.4.0 -Dusername=fresh-mar-06-23 -Dpassword=Ussr12309 -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2'
+                            bat 'mvn clean deploy -DmuleDeploy -DmuleVersion=4.4.0 -Dusername=fresh-mar-06-23 -Dpassword=Ussr12309 -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2'
                          }
                     }
          }
